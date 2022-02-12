@@ -2,7 +2,6 @@
 {% import "macros/logo.html" as logo -%}
 {% import "macros/header.html" as header -%}
 {% import "macros/extended_header.html" as extended_header -%}
-{% import "macros/lists.html" as lists -%}
 {% import "macros/posts.html" as posts -%}
 {% import "macros/social.html" as social -%}
 {% import "macros/utils.html" as utils -%}
@@ -62,17 +61,15 @@
             {%- endblock header -%}
             <div class="content">
                 {%-  block main -%}
-                    <div style="margin-left: auto; margin-right: auto"><h1>yude.jp へようこそ</h1></div>
-                    {{ lists::list_pages() }}
+                    <div style="margin-left: auto; margin-right: auto; text-align: center">
+                        <h1>yude.jp へようこそ</h1>
+                        <img src="https://count.getloli.com/get/@yude?theme=moebooru-h" />
+                    </div>
                 {%- endblock main -%}
             </div>
-            {#-
-            I keep pagination out of list, unlike Terminal, because I don't
-            like how the pagination buttons move with the width of the content
-            div.
-            -#}
+            
             {%- block pagination -%}
-                {{ pagination::paginate() }}
+            
             {%- endblock pagination -%}
 
             {%- block footer -%}
