@@ -38,8 +38,6 @@
     }
 
     & > *:first-child:not(:only-child) {
-      margin-right: 10px;
-
        @media (max-width: $tablet-max-width) {
         border: none;
         padding: 0;
