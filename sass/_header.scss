@@ -26,6 +26,7 @@
   &__logo {
     display: flex;
     flex: 1;
+    font-family: monospace;
 
     &:after {
       content: '';
